@@ -28,3 +28,23 @@
     background-color: #aaa;
     color: white;
 }
+
+
+
+body{
+	background-color: yellowgreen;
+	color: white;
+}
+
+#post-1>.entry-header>.entry-title{
+	color: white;
+	transform: rotate3d(44,5,1,23deg);
+}
+
+#post-1>.entry-content>p{
+	
+}
+
+a{
+	color: orange;
+}
