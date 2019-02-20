@@ -60,3 +60,10 @@ body{
 	color: #e29300;
 }
 
+#post-1 a{
+	color: white;
+}
+
+#post-1 path{
+	color: #ddd;
+}
