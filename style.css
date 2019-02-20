@@ -1,0 +1,30 @@
+/*
+ Theme Name:   Twenty nineteen enfant
+ Theme URI:    http://example.com/twenty-nineteen-child/
+ Description:  Twenty nineteen theme enfant
+ Author:       William Gingras
+ Author URI:   http://example.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-enfant
+*/
+
+.site-branding .site-title,
+.site-branding .site-description{
+    padding: 11px;
+    border-radius: 11px;
+}
+
+.site-branding .site-title{
+    font-size: 3em;
+    background-color: #ddd;
+}
+
+.site-branding .site-description{
+    font-size: 1.5em;
+    background-color: #aaa;
+    color: white;
+}
