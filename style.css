@@ -30,7 +30,6 @@
 }
 
 
-
 body{
 	background-color: yellowgreen;
 	color: white;
@@ -41,10 +40,23 @@ body{
 	transform: rotate3d(44,5,1,23deg);
 }
 
-#post-1>.entry-content>p{
-	
+#recent-posts-2>ul>li>a{
+	color: #e29300;
 }
 
-a{
-	color: orange;
+#recent-comments-2>ul a{
+	color: #e29300;
 }
+
+#archives-2>ul>li>a{
+	color: #e29300;
+}
+
+#categories-2>ul>li>a{
+	color: #e29300;
+}
+
+#meta-2>ul>li>a{
+	color: #e29300;
+}
+
