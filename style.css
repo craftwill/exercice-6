@@ -1,73 +1,160 @@
-/*
- Theme Name:   Twenty nineteen enfant
- Theme URI:    http://example.com/twenty-nineteen-child/
- Description:  Twenty nineteen theme enfant
- Author:       William Gingras
- Author URI:   http://example.com
- Template:     twentynineteen
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-nineteen-enfant
-*/
+@-webkit-keyframes animChargementLettre {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  70% {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
+    opacity: 1.0;
+  }
+  to {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animChargementLettre {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  70% {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
+    opacity: 1.0;
+  }
+  to {
+    -webkit-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes animChargementFond {
+  from {
+  }
+  50% {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animChargementFond {
+  from {
+  }
+  50% {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 .site-branding .site-title,
-.site-branding .site-description{
-    padding: 11px;
-    border-radius: 11px;
+.site-branding .site-description {
+  padding: 11px;
+  border-radius: 11px;
 }
 
-.site-branding .site-title{
-    font-size: 3em;
-    background-color: #ddd;
+.site-branding .site-title {
+  font-size: 3em;
+  background-color: #ddd;
 }
 
-.site-branding .site-description{
-    font-size: 1.5em;
-    background-color: #aaa;
-    color: white;
+.site-branding .site-description {
+  font-size: 1.5em;
+  background-color: #aaa;
+  color: white;
 }
 
-body{
-	background-color: lightcoral;
-	color: black;
+body {
+  background-color: lightcoral;
+  color: black;
 }
 
-#post-1>.entry-header>.entry-title{
-	color: white;
-	transform: rotate3d(44,5,1,23deg);
+#post-1 > .entry-header > .entry-title {
+  color: white;
+  -webkit-transform: rotate3d(44, 5, 1, 23deg);
+          transform: rotate3d(44, 5, 1, 23deg);
 }
 
-#recent-posts-2>ul>li>a{
-	color: red;
+#recent-posts-2 > ul > li > a {
+  color: red;
 }
 
-#recent-comments-2>ul a{
-	color: red;
+#recent-comments-2 > ul a {
+  color: red;
 }
 
-#archives-2>ul>li>a{
-	color: red;
+#archives-2 > ul > li > a {
+  color: red;
 }
 
-#categories-2>ul>li>a{
-	color: red;
+#categories-2 > ul > li > a {
+  color: red;
 }
 
-#meta-2>ul>li>a{
-	color: red;
+#meta-2 > ul > li > a {
+  color: red;
 }
 
-#post-1 a{
-	color: white;
+#post-1 a {
+  color: white;
 }
 
-#post-1 path{
-	color: #ddd;
+#post-1 path {
+  color: #ddd;
 }
 
-.classePersoTexteExercice{
-    font-size: 22px;
-    padding: 3px;
+.classePersoTexteExercice {
+  font-size: 22px;
+  padding: 3px;
 }
+
+.chargement {
+  -webkit-animation: animChargementFond 3s forwards;
+          animation: animChargementFond 3s forwards;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+.chargementLettre {
+  -webkit-animation: animChargementLettre 2.3s forwards;
+          animation: animChargementLettre 2.3s forwards;
+  color: white;
+  font-size: 54px;
+}
+/*# sourceMappingURL=style.css.map */

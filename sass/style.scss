@@ -1,0 +1,78 @@
+@import "mixins/mixins";
+@import "animation/animation";
+
+.site-branding .site-title,
+.site-branding .site-description{
+    padding: 11px;
+    border-radius: 11px;
+}
+
+.site-branding .site-title{
+    font-size: 3em;
+    background-color: #ddd;
+}
+
+.site-branding .site-description{
+    font-size: 1.5em;
+    background-color: #aaa;
+    color: white;
+}
+
+body{
+	background-color: lightcoral;
+	color: black;
+}
+
+#post-1>.entry-header>.entry-title{
+	color: white;
+	transform: rotate3d(44,5,1,23deg);
+}
+
+#recent-posts-2>ul>li>a{
+	color: red;
+}
+
+#recent-comments-2>ul a{
+	color: red;
+}
+
+#archives-2>ul>li>a{
+	color: red;
+}
+
+#categories-2>ul>li>a{
+	color: red;
+}
+
+#meta-2>ul>li>a{
+	color: red;
+}
+
+#post-1 a{
+	color: white;
+}
+
+#post-1 path{
+	color: #ddd;
+}
+
+.classePersoTexteExercice{
+    font-size: 22px;
+    padding: 3px;
+}
+
+
+
+
+
+.chargement{
+	animation: animChargementFond 3s forwards;
+	@include element-recouvrant-page;
+	background-color: black;
+}
+
+.chargementLettre{
+	animation: animChargementLettre 2.3s forwards;
+	color: white;
+	font-size: 54px;
+}

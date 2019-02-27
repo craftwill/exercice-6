@@ -1,0 +1,30 @@
+@keyframes animChargementLettre{
+    from{
+        transform: rotateZ(0deg);
+    }
+    30%{
+        transform: rotateZ(360deg);
+    }
+    40%{
+        transform: rotateZ(360deg);
+    }
+    70%{
+        transform: rotateZ(720deg);
+        opacity: 1.0;
+    }
+    to{
+        transform: rotateZ(720deg);
+        opacity: 0;
+    }
+}
+
+@keyframes animChargementFond{
+    from{
+    }
+    50%{
+        opacity: 1.0;
+    }
+    to{
+        opacity: 0;
+    }
+}
